@@ -4,7 +4,7 @@
 
     <groupId>pedro.dias</groupId>
     <artifactId>Cassandra</artifactId>
-    <version>1.0</version>
+    <version>1.0.1</version>
     <packaging>ejb</packaging>
 
     <name>Cassandra</name>
@@ -39,8 +39,17 @@
         </dependency>
     </dependencies>
 
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>Pedro Dias</name>
+            <url>https://maven.pkg.github.com/pedroafonsodias/CassandraReflectionDataModel</url>
+        </repository>
+    </distributionManagement>
+
     <build>
         <plugins>
+            
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
